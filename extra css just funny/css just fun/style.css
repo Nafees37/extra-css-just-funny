@@ -1,0 +1,43 @@
+.jannat{
+	background-image: url(Images/sundori.PNG);
+	width: 500px;
+	height: 500px;
+	background-size: cover;
+	margin: 100px auto;
+	background-position: center center;
+	position: relative;
+}
+.jannat:before{
+	background: #1E3328;
+	width: 250px;
+	height: 500px;
+	content: '';
+	display: block;
+	clear: both;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: 2s;
+}
+.jannat:after{
+	background: #1E3328;
+	width: 250px;
+	height: 500px;
+	content: '';
+	display: block;
+	clear: both;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: 2s;
+}
+.jannat:hover:before{
+	left:-250px;
+	transform: rotateY(180deg);
+	background: #E3D1CF; 
+}
+.jannat:hover:after{
+	right: -250px;
+	transform: rotateY(180deg);
+	background: #E3D1CF;
+}
